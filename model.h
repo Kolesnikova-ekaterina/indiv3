@@ -68,8 +68,8 @@ public:
     {
         for (unsigned int i = 0; i < node->mNumMeshes; i++)
         {
-            // сцена содержит всю инфу, ноды лишь ее упорядочивают
-            // и содержат индексы только фактических объектов в сцене
+            
+            
             aiMesh* mesh = scene->mMeshes[node->mMeshes[i]];
             meshes.push_back(Process_mesh(mesh, scene));
         }
@@ -92,7 +92,7 @@ public:
         for (unsigned int i = 0; i < mesh->mNumVertices; i++)
         {
             Vertex vertex;
-            glm::vec3 vector; //вектор assimp и glm не дружат, пытаемся подружить
+            glm::vec3 vector; 
 
             //вершины
             vector.x = mesh->mVertices[i].x;

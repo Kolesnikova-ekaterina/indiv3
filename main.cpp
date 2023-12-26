@@ -565,8 +565,8 @@ int main()
 				}
 				if (event.key.code == sf::Keyboard::W)
 				{
-					cameraPos -= camera_speed * glm::vec3(0.0f, 0.0f, 1.0f); //особенность: в отличии от остального перемещения
-																			// здесь(и в S) мы тупа вдоль оси Z едем		
+					cameraPos -= camera_speed * glm::vec3(0.0f, 0.0f, 1.0f); 
+																			
 					airshipPos -= glm::vec3(0.0f, 0.0f, 0.5f);
 				}
 				if (event.key.code == sf::Keyboard::S)
